@@ -20,6 +20,7 @@ class PostForm(forms.ModelForm):
             field.view_length = 4
 
         self['title'].view_length = self['content'].view_length = self['description'].view_length = 12
+        self['title'].help_text = '命名规范：系统/项目名称-漏洞名称，如 XXX系统-SQL注入漏洞'
         self['content'].field.widget.require = False
         self['description'].field.widget.attrs['rows'] = 3
 
