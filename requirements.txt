@@ -8,4 +8,5 @@ django-bootstrap3
 django-registration-redux
 django-mailgun
 pytz
-psycopg2
+pymysql
+#psycopg2
