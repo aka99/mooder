@@ -96,6 +96,7 @@ mooder/media_cdn/
 mooder/static_cdn/
 archives/static/js/
 mooder/settings_development.py
+mooder/settings_aka.py
 
 .secretkey
 
