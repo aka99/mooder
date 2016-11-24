@@ -4,8 +4,10 @@
 {% block title %}编辑贡献{% endblock %}
 
 {% block header %}
-<link href="//cdn.bootcss.com/codemirror/5.19.0/codemirror.min.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/codemirror/5.19.0/theme/neat.css" rel="stylesheet">
+{% load static %}
+
+<link href="{% static  'css/codemirror.min.css' %}" rel="stylesheet">
+<link href="{% static  'css/neat.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
@@ -45,9 +47,9 @@
 {% endblock %}
 
 {% block footer %}
-<script src="//cdn.bootcss.com/codemirror/5.19.0/codemirror.min.js"></script>
-<script src="//cdn.bootcss.com/codemirror/5.19.0/mode/markdown/markdown.min.js"></script>
-<script type="text/javascript" src="//cdn.bootcss.com/plupload/2.1.9/plupload.full.min.js"></script>
+<script src="{% static 'js/codemirror.min.js' %}"></script>
+<script src="{% static 'js/markdown.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/plupload.full.min.js' %}"></script>
 <script type="text/javascript">
 window.onload = function () {
     var textarea = document.getElementById("id_content");
@@ -69,7 +71,7 @@ window.onload = function () {
             runtimes : 'html5,flash',
             browse_button : document.getElementById('upbtn'),
             url : "{% url 'archive:upload-images' %}",
-            flash_swf_url : "//cdn.bootcss.com/plupload/2.1.9/Moxie.swf",
+            flash_swf_url : "{% static 'Moxie.swf' %}",
             filters : {
                 max_file_size : '5mb',
                 mime_types: [

@@ -101,3 +101,4 @@ mooder/settings_aka.py
 .secretkey
 
 .DS_Store
+/node_modules/

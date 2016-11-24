@@ -12,10 +12,11 @@
 
 		<!-- Styles -->
 		<!-- Bootstrap CSS -->
-        <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'bootstrap-3.3.0/css/bootstrap.min.css' %}" rel="stylesheet">
+{#        <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css" rel="stylesheet">#}
 		<!-- Font awesome CSS -->
-		<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
+        <link href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet">
 
 		<!-- Main CSS -->
 		<link href="{% static 'css/sign.css' %}" rel="stylesheet">
@@ -31,10 +32,10 @@
 
 		<!-- Javascript files -->
 		<!-- jQuery -->
-		<script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 		<!-- Bootstrap JS -->
-		<script src="//cdn.bootcss.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+		<script src="{% static 'bootstrap-3.3.0/js/bootstrap.min.js' %}"></script>
 		<!-- Placeholder JS -->
-		<script src="//cdn.bootcss.com/placeholders/4.0.1/placeholders.min.js"></script>
+		<script src="{% static 'js/placeholders.min.js' %}"></script>
 	</body>
 </html>

@@ -44,7 +44,7 @@
 {% endblock %}
 
 {% block footer %}
-<script type="text/javascript" src="//cdn.bootcss.com/plupload/2.1.9/plupload.full.min.js"></script>
+<script type="text/javascript" src="{% static 'js/plupload.full.min.js' %}"></script>
 <script type="text/javascript">
 window.onload = function () {
     var PluploadHandler = function( $, plupload ) {
